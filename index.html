@@ -79,7 +79,7 @@
     <div class="container">
         <h1>Cloaked Site File Generator</h1>
         
-        <label for="url-input">Enter URL for Iframe:</label>
+        <label for="url-input">Enter URL for embed:</label>
         <input type="text" id="url-input" placeholder="Enter the URL that you want the file to open" />
         
         <label for="title-input">Enter Page Title:</label>
@@ -106,7 +106,7 @@
         function downloadHtml() {
             const rawUrl = document.getElementById('url-input').value;
             const rawBaseUrl = document.getElementById('favicon-input').value;
-            const title = document.getElementById('title-input').value || "Iframe Page";
+            const title = document.getElementById('title-input').value || "Embed Page";
 
             const url = normalizeUrl(rawUrl);
             const baseUrl = rawBaseUrl ? normalizeUrl(rawBaseUrl) : "";
@@ -128,7 +128,7 @@
                             height: 100%;
                             overflow: hidden;
                         }
-                        iframe {
+                        embed {
                             width: 100%;
                             height: 100%;
                             border: none;
@@ -136,7 +136,7 @@
                     </style>
                 </head>
                 <body>
-                    <iframe src="${url}"></iframe>
+                    <embed src="${url}"></embed>
                 </body>
                 </html>
             `;
