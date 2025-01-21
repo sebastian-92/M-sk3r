@@ -1,5 +1,5 @@
 # Cloaked Site File Generator (better name W.I.P.)
-Program that generates HTML files that contain cloaked iFrame sites
+Program that generates HTML files that contain cloaked embedded sites
 ## THIS DOES NOT UNBLOCK SITES
 
 To use it, open this link (or download the index.html file):
