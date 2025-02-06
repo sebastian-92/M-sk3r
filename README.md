@@ -1,4 +1,4 @@
-# Cloaked Site File Generator (better name W.I.P.)
+# Mask3r
 Program that generates HTML files that contain cloaked embedded sites
 ## THIS DOES NOT UNBLOCK SITES
 
