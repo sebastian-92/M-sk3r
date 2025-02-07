@@ -202,6 +202,12 @@
             <option value="google-classroom">Google Classroom</option>
             <option value="clever">Clever</option>
             <option value="gmail">Gmail</option>
+            <option value="schoology">Schoology</option>
+            <option value="googledocs">Google Docs</option>
+            <option value="googleslides">Google Slides</option>
+            <option value="ixl">IXL</option>
+            <option value="kahoot">Kahoot</option>
+            <option value="wikipedia">Wikipedia</option>
         </select>
         
         <button id="generate-button"><span>Download File</span></button>
@@ -235,6 +241,18 @@
                     titleInput.value = 'Clever | Portal';
                 } else if (e.target.value === 'gmail') {
                     titleInput.value = 'Inbox (13,507) - schoolgmail@gmail.com';
+                } else if (e.target.value === 'schoology') {
+                    titleInput.value = 'Home | Schoology';
+                } else if (e.target.value === 'googledocs') {
+                    titleInput.value = 'Google Docs';
+                } else if (e.target.value === 'googleslides') {
+                    titleInput.value = 'Google Slides';
+                } else if (e.target.value === 'ixl') {
+                    titleInput.value = 'IXL | Dashboard';
+                } else if (e.target.value === 'kahoot') {
+                    titleInput.value = 'Enter Game PIN - Kahoot!';
+                } else if (e.target.value === 'wikipedia') {
+                    titleInput.value = 'Carbon steel - Wikipedia';
                 }
             } else {
                 titleInput.disabled = false;
@@ -258,6 +276,18 @@
                 faviconUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSui5oHbrCBkSX65dyyM48zoF-a0Oxim3C_bg&s';
             } else if (preSavedOption === 'gmail') {
                 faviconUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png';
+            } else if (preSavedOption === 'schoology') {
+                faviconUrl = 'https://resources.finalsite.net/images/f_auto,q_auto/v1626100427/k12albemarleorg/uj41eppe27bunrvhwnep/PowerSchoolLogos_Vertical-01.png'
+            } else if (preSavedOption === 'googledocs') {
+                faviconUrl = 'https://cdn-icons-png.flaticon.com/512/5968/5968517.png'
+            } else if (preSavedOption === 'googleslides') {
+                faviconUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwjPHuGuwlT6e8jmILXFJBt0KiDUBuFRE66g&s'
+            } else if (preSavedOption === 'ixl') {
+                faviconUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpDW_Tf_9zWK7CunOwLbpwAiZIdnVLm07qyg&s'
+            } else if (preSavedOption === 'kahoot') {
+                faviconUrl = 'https://img.utdstc.com/icon/d5c/334/d5c3346c268caf090b36f1a4b9091f7ea88c895ff20d0418e65a8c2c11da9066:200'
+            } else if (preSavedOption === 'wikipedia') {
+                faviconUrl = 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Wikipedia%27s_W.svg/1024px-Wikipedia%27s_W.svg.png'
             }
 
             if (faviconInput.files.length > 0) {
